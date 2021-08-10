@@ -1,0 +1,30 @@
+package pkg;
+
+
+
+	import java.io.BufferedReader;
+	import java.io.file;
+	import java.io.FileNotFoundException;
+	import java.io.FileReader;
+	import java.io.IOException;
+	
+
+public class CSVReader {
+	public static void main(String[] args)throws IOException {
+		
+		File CSVFile = new File ("C:/Users/A/Desktop/name/Csv_File");
+		BufferedReader br = new BufferedReader(new FileReader(csvFile));
+		String line = "";
+		try {
+			while ((line = reader.readLine()) ! = null) {
+				
+				String[] count = line.split(",");
+				System.out.println( count[0]+" "+count[1]+" "+[2]+" "count[3]);
+			}
+			
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+}
+
